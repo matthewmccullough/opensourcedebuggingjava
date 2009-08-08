@@ -12,7 +12,8 @@ public class HelloWorldJava {
   }
   
   public void print() throws Exception {
-    System.out.println("Hello Java World!");
+    String helloWorld = "Hello Java World!";
+    System.out.println(helloWorld);
     new java.util.ArrayList(1000);
     Thread.sleep(1000);
   }

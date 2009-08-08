@@ -41,10 +41,18 @@ select * from java.lang.String\
 
 \f0\b BTrace
 \f1\b0 \
-Start java2d\
-btrace <PID> Memory.java
-\f0\b \
+#Start java2d\
+#Run the sun samples\
+#Or start HelloWorldJava\
+btrace <PID> Memory.java\
 \
+#Unsafe mode. Change btrace script contents:\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 change -Dcom.sun.btrace.unsafe=false to -Dcom.sun.btrace.unsafe=true
+\b \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
 JMeter Web Service Sampler\
 
 \f1\b0 http://localhost:8080/JackedUpApp2/services/carShow?wsdl\
