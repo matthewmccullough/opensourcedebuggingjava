@@ -39,10 +39,11 @@ import java.util.concurrent.atomic.AtomicInteger;
    private static Map<String, AtomicInteger> histo = newHashMap();
 
     @OnMethod(
-        clazz="javax.swing.JComponent",
-        method="<init>"
+        clazz="com.ambientideas.HelloWorldJava",
+        method="print"
     ) 
-    public static void onnewObject(Object obj) {
+    public static void onPrint(Object obj) {
+        println("Print was called.");
         String cn = name(classOf(obj));
         AtomicInteger ai = get(histo, cn);
         if (ai == null) {
@@ -56,7 +57,7 @@ import java.util.concurrent.atomic.AtomicInteger;
     @OnTimer(4000) 
     public static void print() {
         if (size(histo) != 0) {
-            printNumberMap("Component Histogram", histo);
+            printNumberMap("'Print calls' Histogram", histo);
         }
     }
 }
