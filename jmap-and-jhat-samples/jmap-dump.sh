@@ -1,0 +1,1 @@
+jmap -dump:file=myfile.hprof $1
