@@ -30,7 +30,7 @@ import static com.sun.btrace.BTraceUtils.*;
 
 @BTrace public class Sizeof {
     @OnMethod(
-        clazz="javax.swing.JComponent",
+        clazz="java.lang.String",
         method="<init>"
     ) 
     public static void onnew(Object obj) {
