@@ -1,0 +1,25 @@
+open *.rtf
+
+#Grails App
+iterm example-files_git/JackedUpApp-Grails GRAILS gray
+cd example-files_git/JackedUpApp-Grails
+grails run-app&
+open "http://localhost:8080/JackedUpApp2/carShow/list"
+
+# CURL of the Grails App
+iterm ~/Documents/Temp/Scratch CURL gray
+
+iterm ~/Documents/Temp/Scratch VISUALVM white
+iterm ~/Documents/Temp/Scratch JMETER white
+iterm example-files_git/btrace BTRACE white
+iterm example-files_git/btrace/btrace-helloworld BTRACEAPP white
+iterm example-files_git/btrace/btrace-helloworld BTRACETRC white
+
+#SOAPui
+iterm /Applications/Dev/soapui-2.5 SOAPUI green
+
+#JavaP
+iterm example-files_git/javap-testapp JAVAP white
+
+#JHat
+iterm example-files_git/jmap-and-jhat-samples JHAT white
