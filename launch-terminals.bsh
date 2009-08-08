@@ -1,22 +1,23 @@
 open *.rtf
 
 #Grails App
-iterm example-files_git/JackedUpApp-Grails GRAILS gray
-cd example-files_git/JackedUpApp-Grails
-grails run-app&
-open "http://localhost:8080/JackedUpApp2/carShow/list"
+iterm $PWD/JackedUpApp-Grails GRAILS gray
+#Strangely, if commands are run prior to launching all the terminals, the other iterm calls fail
+#cd JackedUpApp-Grails
+#grails run-app&
+#open "http://localhost:8080/JackedUpApp2/carShow/list"
 
 #Other apps
 iterm ~/Documents/Temp/Scratch VISUALVM white
 iterm ~/Documents/Temp/Scratch JMETER white
 
 #BTrace from the CLI
-iterm example-files_git/btrace BTRACE white
-iterm example-files_git/btrace/btrace-helloworld BTRACEAPP white
-iterm example-files_git/btrace/btrace-helloworld BTRACETRC white
+iterm $PWD/btrace BTRACE white
+iterm $PWD/btrace/btrace-helloworld BTRACEAPP white
+iterm $PWD/btrace/btrace-helloworld BTRACETRC white
 
 #JavaP
-iterm example-files_git/javap-testapp JAVAP white
+iterm $PWD/javap-testapp JAVAP white
 
 #JHat
-iterm example-files_git/jmap-and-jhat-samples JHAT white
+iterm $PWD/jmap-and-jhat-samples JHAT white
