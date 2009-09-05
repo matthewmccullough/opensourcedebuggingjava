@@ -37,11 +37,19 @@ jps -m
 Eclipse Memory Analyzer
 \f1\b0 \
 select * from java.lang.String\
-\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab920\sl216\slmult1\sa960\ql\qnatural\pardirnatural
+\cf0 select z from java.lang.String z where z.count >= 50
+\f0\b \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 Jhat\
 
-\f0\b BTrace
-\f1\b0 \
-#Start java2d\
+\f1\b0 jhat <file.hprof>\
+open http://localhost:7000\
+
+\f0\b \
+BTrace\
+
+\f1\b0 #Start java2d\
 #Run the sun samples\
 #Or start HelloWorldJava\
 btrace <PID> Memory.java\
@@ -72,4 +80,17 @@ serialver com.ambientideas.App\
 JavaP Class File Disassembler
 \f1\b0 \expnd0\expndtw0\kerning0
 \
-javap -c -s -private -verbose target/classes/com.ambientideas.App}
+#Disassemble code, internal type signatures\
+javap -c -s target/classes/com.ambientideas.App\
+#Plus private methods/members in verbose form\
+javap -c -s -private -verbose target/classes/com.ambientideas.App\
+\
+
+\f0\b \expnd0\expndtw0\kerning0
+Code Search Engines
+\f1\b0 \expnd0\expndtw0\kerning0
+\
+www.goog.le.com/codesearch\
+lang:java\
+lang:objective\
+}
