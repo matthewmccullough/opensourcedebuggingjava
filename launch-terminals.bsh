@@ -21,6 +21,9 @@ iterm btrace BTRACE white
 iterm btrace/btrace-helloworld BTRACEAPP white
 iterm btrace/btrace-helloworld BTRACETRC white
 
+#JStatD
+iterm jstatd-samples JSTATD white
+
 #JavaP
 iterm javap-testapp JAVAP white
 
