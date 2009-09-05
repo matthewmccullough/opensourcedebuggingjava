@@ -1,5 +1,7 @@
 //import javax.jws.WebParam
 
+//SOAP web service for the car shows
+
 class CarShowService {
   static expose=['xfire']
   boolean transactional = true
