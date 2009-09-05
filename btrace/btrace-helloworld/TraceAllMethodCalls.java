@@ -15,6 +15,7 @@ import java.util.Map;
         location=@Location(value=Kind.CALL, clazz="/.*/", method="/.*/")
     )
     public static void m(AnyType[] args) {
+        //System.out.println("Hello");
         println(strcat("****** WE'VE ENTERED A METHOD ON CLASS: ", name(probeClass())));
         println(strcat("****** WE'VE ENTERED METHOD: ", probeMethod()));
     }
