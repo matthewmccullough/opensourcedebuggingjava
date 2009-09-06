@@ -1,6 +1,7 @@
 import grails.converters.XML
 import grails.converters.JSON
 import javax.swing.text.html.HTML
+import com.ambientideas.QueryHistory
 
 class CarShowController {
   def scaffold = true
@@ -13,6 +14,12 @@ class CarShowController {
       flash.message = "CarShow not found with id ${params.id}"
       redirect(action:list)
     }
+
+    //INTENTIONAL BUG
+    //Converters: http://docs.codehaus.org/display/GRAILS/Converters+Reference
+    def converter = carShowInstance as XML
+    String xmlBean = converter.toString()
+    QueryHistory.addHistoryElement(xmlBean)
 
     withFormat {
       html {return [ carShowInstance : carShowInstance ]}
