@@ -1,8 +1,1 @@
-web-app/WEB-INF
-web-app/plugins/core
-*.log
-test/reports
-out/
-*.index
-*.hprof
-*.zip
+dumps/
