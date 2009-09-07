@@ -1,1 +1,4 @@
 dumps/
+out/
+test/reports/
+stacktrace.log

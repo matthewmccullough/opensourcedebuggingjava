@@ -1,3 +1,5 @@
+import com.ambientideas.CarShow
+
 //import javax.jws.WebParam
 
 //SOAP web service for the car shows

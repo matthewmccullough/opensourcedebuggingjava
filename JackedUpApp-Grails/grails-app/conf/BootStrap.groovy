@@ -1,3 +1,5 @@
+import com.ambientideas.CarShow
+
 class BootStrap {
 
      def init = { servletContext ->

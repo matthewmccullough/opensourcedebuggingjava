@@ -2,9 +2,10 @@ import grails.converters.XML
 import grails.converters.JSON
 import javax.swing.text.html.HTML
 import com.ambientideas.QueryHistory
+import com.ambientideas.CarShow
 
 class CarShowController {
-  def scaffold = true
+  def scaffold = com.ambientideas.CarShow
 
   //GET
   def show = {

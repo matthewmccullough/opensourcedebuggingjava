@@ -1,6 +1,9 @@
 import grails.converters.XML
 import grails.converters.JSON
+
 import javax.swing.text.html.HTML
+
+import com.ambientideas.CarShow
 
 class CarShowRESTController {
   //Not really necessary since the resource RESTful mapping already routes to these four methods
