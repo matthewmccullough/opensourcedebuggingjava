@@ -23,9 +23,10 @@ class CarShowRESTController {
     }
     
     withFormat {
+      //INTENTIONAL BUG: Bad mapping of types
       html { render "ERROR! The SHOW RETRIEVAL service only supports JSON and XML Accept types"}
-      json { render carShowInstance as JSON }
-      xml { render carShowInstance as XML}
+      json { render carShowInstance as XML }
+      xml { render carShowInstance as JSON}
     }
   }
 
