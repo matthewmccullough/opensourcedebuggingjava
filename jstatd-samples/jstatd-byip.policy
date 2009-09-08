@@ -1,0 +1,5 @@
+grant codebase "file:${java.home}/../lib/tools.jar" {
+  permission java.net.SocketPermission
+    "localhost:1099",
+    "accept, connect, listen, resolve";
+};

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/JackedUpApp2"/>
@@ -7,6 +7,14 @@
 <listEntry value="4"/>
 </listAttribute>
 <booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_AUTO_FILTER_CRITERIA" value="true"/>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_AUTO_MONITORING" value="false"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DATA_COLLECTOR" value="org.eclipse.tptp.trace.jvmti.jvmtiMechanism:org.eclipse.tptp.analysisType.jvmti.execution"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_FILE" value=""/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_MONITOR" value="DefaultMonitor"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_PROJECT" value="ProfileProject"/>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILE_TO_FILE" value="false"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILING_SET" value="tptp-dummy-profiling-set-JackedUpApp2"/>
 <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
 <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER&quot; javaProject=&quot;JackedUpApp2&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#10;"/>
 <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;GRAILS_HOME/dist/grails-bootstrap-1.1.1.jar&quot; path=&quot;3&quot; type=&quot;3&quot;/&gt;&#10;"/>
@@ -15,5 +23,43 @@
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="grails.util.GrailsMain"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JackedUpApp2"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dbase.dir=&quot;${project_loc:JackedUpApp2}&quot; -Dserver.port=8080 -Dgrails.env=development"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dbase.dir=&quot;${project_loc:JackedUpApp2}&quot; -Dserver.port=8080 -Dgrails.env=production -Xmx1024m"/>
+<stringAttribute key="org.eclipse.tptp.platform.instrumentation.ui.ATTR_INSTRUMENT_FILTER_SET" value="org.eclipse.tptp.platform.instrumentation.ui.Groovy &amp; Grails1252399232143"/>
+<stringAttribute key="org.eclipse.tptp.platform.instrumentation.ui.CURRENT_INSTRUMENT_POINT" value="org.eclipse.tptp.monitoring.instrumentation.jmxProbe"/>
+<booleanAttribute key="org.eclipse.tptp.platform.instrumentation.ui.ENABLE_JMX_INSTRUMENT_FILTER_SET" value="true"/>
+<stringAttribute key="org.eclipse.tptp.platform.instrumentation.ui.JMX_ACTIVE_INSTRUMENT_FILTER_SET" value="org.eclipse.tptp.platform.instrumentation.ui.Groovy &amp; Grails1252399232143"/>
+<booleanAttribute key="org.eclipse.tptp.platform.instrumentation.ui.JMX_CREATE_MBEANS" value="true"/>
+<stringAttribute key="org.eclipse.tptp.platform.instrumentation.ui.JMX_INSTRUMENT_FILTER_SETS_KEY_JackedUpApp2" value="&lt;filters&gt;&lt;filter id = 'org.eclipse.tptp.platform.instrumentation.ui.filterSet.default' key = 'DEF_SETNM' name = 'Default'&gt;&lt;contents&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'COM.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'java*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'org*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'junit*'/&gt;&lt;/contents&gt;&lt;/filter&gt;&lt;filter id = 'org.eclipse.tptp.platform.instrumentation.ui.Groovy &amp; Grails1252399232143' name = 'Groovy &amp; Grails'&gt;&lt;contents&gt;&lt;content text = '*' method = '*' visibility = 'INCLUDE' package = 'com.ambientideas'/&gt;&lt;/contents&gt;&lt;/filter&gt;&lt;filter id = 'org.eclipse.tptp.platform.instrumentation..ui.filterSet.webspherej2ee' key = 'J2EE_FILTER' name = 'WebSphere J2EE'&gt;&lt;contents&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.tivoli*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'COM.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'db2j*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'java*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'org*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'junit*'/&gt;&lt;/contents&gt;&lt;/filter&gt;&lt;filter id = 'org.eclipse.tptp.platform.instrumentation..ui.filterSet.websphere' key = 'WEB_SPHERE_STD_FILTER' name = 'WebSphere Studio'&gt;&lt;contents&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'com.sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'COM.ibm*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'java*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'org.eclipse*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'sun*'/&gt;&lt;content text = '*' method = '*' visibility = 'EXCLUDE' package = 'junit*'/&gt;&lt;/contents&gt;&lt;/filter&gt;&lt;/filters&gt;"/>
+<booleanAttribute key="org.eclipse.tptp.platform.instrumentation.ui.JMX_STATS_COLLECTION" value="true"/>
+<stringAttribute key="org.eclipse.tptp.platform.instrumentation.ui.SELECTED_INSTRUMENT_COLLECTOR" value="org.eclipse.tptp.platform.instrumentation.ui.instrumentCollector.jvmti"/>
+<listAttribute key="org.eclipse.tptp.platform.instrumentation.ui.SELECTED_INSTRUMENT_FILES">
+<listEntry value="T:\Open-Source-Debugging-JavaTools-NFJS\examples_git\JackedUpApp-Grails\src\java\JMXProbe.probescript"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.tptp.platform.jvmti.client.ATTR_FILTERSET_ID" value="auto_generated_filter_set"/>
+<mapAttribute key="tod.plugin.launch.OPTIONS_MAP">
+<mapEntry key="bci-preload-classes" value="false"/>
+<mapEntry key="db-process-timeout" value="30"/>
+<mapEntry key="with-aspects" value="false"/>
+<mapEntry key="collector-port" value="8058"/>
+<mapEntry key="instrumenter-classesDir" value=""/>
+<mapEntry key="agent-verbose" value="0"/>
+<mapEntry key="server-type" value="tod.core.server.JavaTODServerFactory"/>
+<mapEntry key="with-bytecode" value="false"/>
+<mapEntry key="db-raw-events-dir" value="C:\Users\admin\tmp\tod"/>
+<mapEntry key="db-autoflush-delay" value="2"/>
+<mapEntry key="structure-db-loc" value="C:\Users\admin/tmp/tod/locations"/>
+<mapEntry key="index-strings" value="false"/>
+<mapEntry key="collector-host" value="localhost"/>
+<mapEntry key="capture-at-start" value="true"/>
+<mapEntry key="trace-filter" value="[-java.** -org.apache.** -org.springframework.** -groovyjarjarasm.** -gant.** -grails.** -groovy.** -org.codehaus.** -javax.** -sun.** -com.sun.** -org.ietf.jgss.** -org.omg.** -org.w3c.** -org.xml.**]"/>
+<mapEntry key="agent-skipCoreClasses" value="true"/>
+<mapEntry key="db-twophases" value="false"/>
+<mapEntry key="master-timeout" value="0"/>
+<mapEntry key="agent-captureExceptions" value="false"/>
+<mapEntry key="localSessionHeap" value="268435456"/>
+<mapEntry key="session-type" value="local"/>
+<mapEntry key="agent-cache-path" value="C:\Users\admin\tmp\tod"/>
+<mapEntry key="scope-globalFilter" value="[-tod.agent.**]"/>
+<mapEntry key="client-name" value="tod-1"/>
+</mapAttribute>
 </launchConfiguration>
