@@ -39,27 +39,27 @@
 <mapAttribute key="tod.plugin.launch.OPTIONS_MAP">
 <mapEntry key="bci-preload-classes" value="false"/>
 <mapEntry key="db-process-timeout" value="30"/>
+<mapEntry key="collector-host" value="localhost"/>
 <mapEntry key="with-aspects" value="false"/>
+<mapEntry key="capture-at-start" value="true"/>
+<mapEntry key="trace-filter" value="[-java.** -org.codehaus.** -javax.** -sun.** -com.sun.** -org.ietf.jgss.** -org.omg.** -org.w3c.** -org.xml.**]"/>
+<mapEntry key="agent-skipCoreClasses" value="true"/>
 <mapEntry key="collector-port" value="8058"/>
 <mapEntry key="instrumenter-classesDir" value=""/>
-<mapEntry key="agent-verbose" value="0"/>
-<mapEntry key="server-type" value="tod.core.server.JavaTODServerFactory"/>
-<mapEntry key="with-bytecode" value="false"/>
-<mapEntry key="db-raw-events-dir" value="C:\Users\admin\tmp\tod"/>
-<mapEntry key="db-autoflush-delay" value="2"/>
-<mapEntry key="structure-db-loc" value="C:\Users\admin/tmp/tod/locations"/>
-<mapEntry key="index-strings" value="false"/>
-<mapEntry key="collector-host" value="localhost"/>
-<mapEntry key="capture-at-start" value="true"/>
-<mapEntry key="trace-filter" value="[-java.** -org.apache.** -org.springframework.** -groovyjarjarasm.** -gant.** -grails.** -groovy.** -org.codehaus.** -javax.** -sun.** -com.sun.** -org.ietf.jgss.** -org.omg.** -org.w3c.** -org.xml.**]"/>
-<mapEntry key="agent-skipCoreClasses" value="true"/>
+<mapEntry key="agent-verbose" value="1"/>
 <mapEntry key="db-twophases" value="false"/>
 <mapEntry key="master-timeout" value="0"/>
+<mapEntry key="server-type" value="tod.core.server.JavaTODServerFactory"/>
 <mapEntry key="agent-captureExceptions" value="false"/>
+<mapEntry key="with-bytecode" value="false"/>
 <mapEntry key="localSessionHeap" value="268435456"/>
+<mapEntry key="db-raw-events-dir" value="C:\Users\admin\tmp\tod"/>
 <mapEntry key="session-type" value="local"/>
+<mapEntry key="scope-globalFilter" value="[-tod.agent.** -org.hibernate.** -org.hsqldb.** -grails.** -org.grails.** -org.opensymphony.** -org.springframework.** -groovy.** -org.codehaus.** -org.mortbay.** -org.apache.**]"/>
+<mapEntry key="db-autoflush-delay" value="2"/>
 <mapEntry key="agent-cache-path" value="C:\Users\admin\tmp\tod"/>
-<mapEntry key="scope-globalFilter" value="[-tod.agent.**]"/>
+<mapEntry key="structure-db-loc" value="C:\Users\admin/tmp/tod/locations"/>
+<mapEntry key="index-strings" value="false"/>
 <mapEntry key="client-name" value="tod-1"/>
 </mapAttribute>
 </launchConfiguration>
