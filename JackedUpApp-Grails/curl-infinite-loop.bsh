@@ -1,0 +1,5 @@
+#!/bin/bash
+while true; do
+    echo Calling web service
+    curl http://localhost:8080/JackedUpApp2/carShow/show/1.xml
+done
