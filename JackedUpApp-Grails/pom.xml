@@ -59,6 +59,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
+
+		<dependency>
+		  <groupId>org.codehaus.gant</groupId>
+		  <artifactId>gant_groovy1.7</artifactId>
+		  <version>1.5.0</version>
+		</dependency>
   </dependencies>
 
   <repositories>
@@ -100,7 +106,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       <plugin>
         <groupId>org.grails</groupId>
         <artifactId>grails-maven-plugin</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>1.1</version>
         <extensions>true</extensions>
         <executions>
           <execution>
@@ -120,8 +126,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.6</source>
+          <target>1.6</target>
         </configuration>
       </plugin>
     </plugins>
