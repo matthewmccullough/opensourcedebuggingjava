@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>grails-app/conf/DataSource.groovy</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>/Applications/Dev/grails-1.1.1/bin/startGrails</string>
+			<key>saveAsAbsolutePath</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>expanded</key>
@@ -24,59 +24,10 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>316</integer>
 	<key>metaData</key>
-	<dict>
-		<key>build.xml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>grails-app/conf/BootStrap.groovy</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>31</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>grails-app/conf/DataSource.groovy</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>9</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>build.xml</string>
-		<string>grails-app/conf/BootStrap.groovy</string>
-		<string>grails-app/conf/DataSource.groovy</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{14, 0}, {691, 746}}</string>
+	<string>{{15, 168}, {691, 578}}</string>
 </dict>
 </plist>
