@@ -1,0 +1,7 @@
+#!/bin/bash
+while true; do
+    echo Calling web service
+    #curl http://localhost:8080/JackedUpApp2/carShow/show/1.xml
+    curl -i -H "Accept: text/xml" http://localhost:8080/JackedUpApp2/rest/carShow/1
+    sleep 10s
+done
