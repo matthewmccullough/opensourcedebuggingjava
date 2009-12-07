@@ -1,4 +1,4 @@
 dumps/
 out/
 test/reports/
-stacktrace.log
+*.log

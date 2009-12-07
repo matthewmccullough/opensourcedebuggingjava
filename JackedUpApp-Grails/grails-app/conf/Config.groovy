@@ -44,11 +44,22 @@ log4j = {
     // Example of changing the log pattern for the default console
     // appender:
     //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
-
-    error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
+    appenders {
+        //console name:'stdoutBetter', layout:pattern(conversionPattern: '%c{2} %m%n')
+        
+        //Intentionally being detrimental to the performance by turning off file write buffering
+        file name:"unbufferedFileAppender", maxFileSize:1024, file:"myApp3.log", bufferedIO:"false", bufferSize:"0"
+    }
+    
+    root {
+        //error 'stdout', 'stdoutBetter'
+        debug 'unbufferedFileAppender'
+    }
+          
+    //http://grails.org/doc/1.1.x/guide/3.%20Configuration.html#3.1.2%20Logging
+    //http://www.grails.org/Logging
+    
+    error 'org.codehaus.groovy.grails.web.servlet',  //  controllers
 	       'org.codehaus.groovy.grails.web.pages', //  GSP
 	       'org.codehaus.groovy.grails.web.sitemesh', //  layouts
 	       'org.codehaus.groovy.grails."web.mapping.filter', // URL mapping
